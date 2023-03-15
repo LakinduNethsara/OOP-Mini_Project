@@ -22,6 +22,7 @@ public class Login extends JFrame {
     private JButton loginButton;
     private JButton cancelButton;
 
+    private int sign=0;
 
     ResultSet r1,r2,r3,r4;
     public Login(){
@@ -54,10 +55,10 @@ public class Login extends JFrame {
                     {
                         String dbUser_name=r1.getString("user_name");
                         String dbPassword =r1.getString("password");
-                       if(dbUser_name.equals(username)){
+                       if(dbUser_name.equals(username)&&dbPassword.equals(password)){
                            ud.setUserDetails(username,password,"Admin");
-
-                            System.exit(0);
+                           sign=1;
+                           dispose();
 
                             //direct admin home page-----------------------------------------
 
@@ -68,10 +69,10 @@ public class Login extends JFrame {
                    while(r2.next()){
                         String dbUser_name=r2.getString("user_name");
                         String dbPassword =r2.getString("password");
-                        if(dbUser_name.equals(username)){
+                        if(dbUser_name.equals(username)&&dbPassword.equals(password)){
                             ud.setUserDetails(username,password,"Technical Officer");
-
-                            System.exit(0);
+                            sign=1;
+                            dispose();
 
                             //direct Technical officer home page-----------------------------------------
 
@@ -82,9 +83,11 @@ public class Login extends JFrame {
                     while(r3.next()){
                         String dbUser_name=r3.getString("user_name");
                         String dbPassword =r3.getString("password");
-                        if(dbUser_name.equals(username)){
+                        if(dbUser_name.equals(username)&&dbPassword.equals(password)){
                             ud.setUserDetails(username,password,"Lecturer");
-                            System.exit(0);
+                            sign=1;
+                            dispose();
+
                             //direct Lecturer home page-----------------------------------------
 
                         }
@@ -94,16 +97,20 @@ public class Login extends JFrame {
                     while(r4.next()){
                         String dbUser_name=r4.getString("user_name");
                         String dbPassword =r4.getString("password");
-                        if(dbUser_name.equals(username)) {
+                        if(dbUser_name.equals(username)&&dbPassword.equals(password)) {
                             ud.setUserDetails(username,password,"Student");
-                            System.exit(0);
+                            sign=1;
+                            dispose();
+
                             //direct Student home page-----------------------------------------
                         }
                     }
 
-                    JOptionPane.showMessageDialog(null,"Invalid login details or not registered");
-                    dispose();
-                    new Login();
+                    if(sign==0){
+                        JOptionPane.showMessageDialog(null, "Invalid login details or not registered");
+                        dispose();
+                        new Login();
+                    }
 
                 } catch (SQLException ex) {
                     throw new RuntimeException(ex);
