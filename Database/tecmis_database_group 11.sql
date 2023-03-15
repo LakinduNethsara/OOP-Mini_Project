@@ -59,8 +59,8 @@ CREATE TABLE IF NOT EXISTS `admin` (
 -- -------------------------------------------------------- --
 -- Table structure for table `tecnical_officer` --
 
-DROP TABLE IF EXISTS `tecnical_officer`;
-CREATE TABLE IF NOT EXISTS `tecnical_officer` (
+DROP TABLE IF EXISTS `technical_officer`;
+CREATE TABLE IF NOT EXISTS `technical_officer` (
   `officer_id` varchar(100) NOT NULL,
   `first_name` varchar(100) DEFAULT NULL,
   `last_name` varchar(100) DEFAULT NULL,
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `lecturer` (
 
 DROP TABLE IF EXISTS `student`;
 CREATE TABLE IF NOT EXISTS `student` (
-  `student_id` varchar(100) NOT NULL,
+  `student_id` varchar(50) NOT NULL,
   `first_name` varchar(100) DEFAULT NULL,
   `last_name` varchar(100) DEFAULT NULL,
   `user_name` varchar(100) DEFAULT NULL,
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `student` (
 
 DROP TABLE IF EXISTS `subject`;
 CREATE TABLE IF NOT EXISTS `subject` (
-  `sub_code` varchar(100) NOT NULL,
+  `sub_code` varchar(50) NOT NULL,
   `sub_name` varchar(100) DEFAULT NULL,
   `type` varchar(100) NOT NULL,
   `credit` int(11) DEFAULT NULL,
@@ -139,8 +139,8 @@ CREATE TABLE IF NOT EXISTS `subject` (
 
 DROP TABLE IF EXISTS `student_subject`;
 CREATE TABLE IF NOT EXISTS `student_subject` (
-  `student_id` varchar(100) NOT NULL,
-  `sub_code` varchar(100) NOT NULL,
+  `student_id` varchar(50) NOT NULL,
+  `sub_code` varchar(50) NOT NULL,
   PRIMARY KEY (`student_id`,`sub_code`),
   FOREIGN KEY (`student_id`) REFERENCES student(`student_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -152,9 +152,10 @@ CREATE TABLE IF NOT EXISTS `student_subject` (
 DROP TABLE IF EXISTS `lecturer_subject`;
 CREATE TABLE IF NOT EXISTS `lecturer_subject` (
   `lecturer_id` varchar(100) NOT NULL,
-  `sub_code` varchar(100) NOT NULL,
+  `sub_code` varchar(50) NOT NULL,
   PRIMARY KEY (`lecturer_id`,`sub_code`),
-  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
+  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY (`lecturer_id`) REFERENCES lecturer(`lecturer_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ;
 
 -- -------------------------------------------------------- --
@@ -166,7 +167,7 @@ CREATE TABLE IF NOT EXISTS `lecturer_upload_material` (
   `m_id` varchar(100) NOT NULL,
   PRIMARY KEY (`lecturer_id`,`m_id`),
   FOREIGN KEY (`lecturer_id`) REFERENCES lecturer(`lecturer_id`)ON DELETE NO ACTION ON UPDATE NO ACTION,
-  FOREIGN KEY (`lecturer_id`) REFERENCES course_material(`lecturer_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
+  FOREIGN KEY (`m_id`) REFERENCES course_material(`m_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 -- -------------------------------------------------------- --
@@ -174,7 +175,7 @@ CREATE TABLE IF NOT EXISTS `lecturer_upload_material` (
 
 DROP TABLE IF EXISTS `medical`;
 CREATE TABLE IF NOT EXISTS `medical` (
-  `medical_id` varchar(100) NOT NULL,
+  `medical_id` varchar(50) NOT NULL,
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `approve_status` varchar(100) DEFAULT NULL,
@@ -188,12 +189,13 @@ CREATE TABLE IF NOT EXISTS `medical` (
 
 DROP TABLE IF EXISTS `medical_submission`;
 CREATE TABLE IF NOT EXISTS `medical_submission` (
-  `medical_id` varchar(100) NOT NULL,
-  `student_id` varchar(100) NOT NULL,
-  `sub_code` varchar(100) NOT NULL,
+  `medical_id` varchar(50) NOT NULL,
+  `student_id` varchar(50) NOT NULL,
+  `sub_code` varchar(50) NOT NULL,
   PRIMARY KEY (`medical_id`,`student_id`,`sub_code`),
   FOREIGN KEY (`medical_id`) REFERENCES medical(`medical_id`)ON DELETE NO ACTION ON UPDATE NO ACTION,
-  FOREIGN KEY (`student_id`) REFERENCES student(`student_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
+  FOREIGN KEY (`student_id`) REFERENCES student(`student_id`)ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 -- -------------------------------------------------------- --
@@ -213,12 +215,13 @@ CREATE TABLE IF NOT EXISTS `time_table` (
 
 DROP TABLE IF EXISTS `attendance`;
 CREATE TABLE IF NOT EXISTS `attendance` (
-  `sub_code` varchar(100) NOT NULL,
-  `student_id` varchar(100) NOT NULL,
+  `sub_code` varchar(50) NOT NULL,
+  `student_id` varchar(50) NOT NULL,
   `date` date NOT NULL,
   `attempt_status` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`sub_code`,`student_id`,`date`),
-  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
+  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY (`student_id`) REFERENCES student(`student_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 -- -------------------------------------------------------- --
@@ -226,8 +229,8 @@ CREATE TABLE IF NOT EXISTS `attendance` (
 
 DROP TABLE IF EXISTS `marks`;
 CREATE TABLE IF NOT EXISTS `marks` (
-	`student_id` varchar(100) NOT NULL,
-	`sub_code` varchar(100) NOT NULL,
+	`student_id` varchar(50) NOT NULL,
+	`sub_code` varchar(50) NOT NULL,
 	`quiz_1` double DEFAULT NULL,
 	`quiz_2` double DEFAULT NULL,
 	`quiz_3` double DEFAULT NULL,
@@ -280,6 +283,10 @@ INSERT INTO `lecturer`
  ('ST005', 'Thilina', 'Thushara', 'thilinathushara', 'thilina1234', 'thilinathushara@gmail.com', 'Matara', '2000-02-04', '0774653894', 'Male', '1', NULL, NULL, 'DEPET'), 
  ('ST006', 'Thilini', 'Paboda', 'thilinipaboda', 'thilini1234', 'thilinipaboda@gmail.com', 'Monaragala', '200-01-10', '0701583169', 'Female', '1', NULL, NULL, 'DEPICT'),
  ('ST007', 'Chinthaka', 'Kelum', 'chinthakakelum', 'chinthaka1234', 'chinthaka6000@gmail.com', 'Kelaniya', '1998-05-06', '0772586310', 'Male', '1', NULL, NULL, 'DEPICT'), 
- ('ST008', 'Suranga', 'Chandima', 'surangachandima@gmail.com', 'suranga1234', 'suranga500chmminda@gmail.com', 'Kalutara', '1995-02-28', '0712583169', 'Male', '1', NULL, NULL, 'DEPET');
+ ('ST008', 'Suranga', 'Chandima', 'surangachandima', 'suranga1234', 'suranga500chmminda@gmail.com', 'Kalutara', '1995-02-28', '0712583169', 'Male', '1', NULL, NULL, 'DEPET');
 
-
+INSERT INTO `technical_officer`
+(`officer_id`, `first_name`, `last_name`, `user_name`, `password`, `email`, `address`, `DOB`, `phone_number`, `gender`, `dep_id`) VALUES 
+('TEC001', 'Kamal', 'Gunawardana', 'kamalgunawardana', 'kamal1234', 'kamalgunawardana@gmail.com', 'Colombo', '1995-05-13', '0751548237', 'Male', 'DEPICT'),
+('TEC002', 'Nishantha', 'Perera', 'nishanthaperera', 'nishantha1234', 'nishanthaperera@gmail.com', 'Galle', '1990-02-17', '0775845245', 'Male', 'DEPET'),
+('TEC003', 'Kasun', 'Rajitha', 'kasunRajitha', 'kasun1234', 'kasunrajitha@gmail.com', 'Matara', '1985-07-13', '0712439583', 'Male', 'DEPBST');
