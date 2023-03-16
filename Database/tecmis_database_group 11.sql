@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `notice` (
   `notice_id` varchar(100) NOT NULL,
   `date` date DEFAULT NULL,
   `title` varchar(100) DEFAULT NULL,
-  `description` varchar(500) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`notice_id`)
 );
 
@@ -115,6 +115,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `level` int(11) DEFAULT NULL,
   `SGPA` double DEFAULT NULL,
   `CGPA` double DEFAULT NULL,
+  `profile_pic_path` VARCHAR(255) DEFAULT NULL,
   `dep_id` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`student_id`),
   FOREIGN KEY (`dep_id`) REFERENCES department(`dep_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
