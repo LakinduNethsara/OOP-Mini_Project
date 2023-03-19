@@ -1,28 +1,34 @@
 package com.user;
 
+import com.DBconnection.dbConnection;
 import com.login.Login;
 import org.w3c.dom.ls.LSOutput;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 public class UserDetails {
-    public String getUsername;
-    private String getPassword;
-    private String getType;
+    private static String myUserame=null;
+    private static String myPassword=null;
+    private static String myType=null;
 
-    public void setUserDetails(String username,String password,String type){
-        getUsername=username;
-        getPassword=password;
-        getType=type;
-
+    public static void setUserDetails(String username,String password,String type){
+        myUserame=username;
+        myPassword=password;
+        myType=type;
     }
 
-    public String getUserName(){
-        return  getUsername;
+    public static String getUsername() {
+        return myUserame;
     }
-    public String getPassword(){
-        return  getPassword;
+    public static String getPassword() {
+        return myPassword;
     }
-    public String getType(){
-        return  getType;
+    public static String getType() {
+        return myType;
     }
+
 
 }
