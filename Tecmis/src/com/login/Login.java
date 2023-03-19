@@ -1,10 +1,10 @@
 package com.login;
 import com.DBconnection.dbConnection;
 import com.student.StudentDashBoard;
+import com.technicalOfficer.TechnicaOfficerDashBoard;
 import com.user.UserDetails;
 import com.lecturer.LecturerDashboard;
 import com.Admin.AdminDashBoard;
-import com.technicalOfficer.TechnicalOfficerDashBoard;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -78,7 +78,7 @@ public class Login extends JFrame {
                             dispose();
 
                             //direct Technical officer home page-----------------------------------------
-                            TechnicalOfficerDashBoard toDashBoard= new TechnicalOfficerDashBoard;
+                            TechnicaOfficerDashBoard toDashBoard= new TechnicaOfficerDashBoard();
                         }
                     }
 
