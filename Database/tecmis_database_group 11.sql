@@ -259,7 +259,6 @@ VALUES
 INSERT INTO `department` (`dep_id`, `dep_name`) VALUES 
 ('DEPICT', 'Department of ICT'),
 ('DEPET', 'Department of Engineering Technology'),
-('DEPMUL', 'Department of Multi Deciplinary'),
 ('DEPBST', 'Department of Bio System Technology');
 
 INSERT INTO `lecturer` 
