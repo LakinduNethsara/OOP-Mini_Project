@@ -1,6 +1,10 @@
 package com.login;
 import com.DBconnection.dbConnection;
+import com.student.StudentDashBoard;
 import com.user.UserDetails;
+import com.lecturer.LecturerDashboard;
+import com.Admin.AdminDashBoard;
+import com.technicalOfficer.TechnicalOfficerDashBoard;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -49,18 +53,17 @@ public class Login extends JFrame {
 
                     Statement ps=con.createStatement();
                     r1 = ps.executeQuery(query1);
-
-                    UserDetails ud= new UserDetails();
                     while(r1.next())
                     {
                         String dbUser_name=r1.getString("user_name");
                         String dbPassword =r1.getString("password");
                        if(dbUser_name.equals(username)&&dbPassword.equals(password)){
-                           ud.setUserDetails(username,password,"Admin");
+                           UserDetails.setUserDetails(username,password,"Admin");
                            sign=1;
                            dispose();
 
                             //direct admin home page-----------------------------------------
+                           AdminDashBoard ad=new AdminDashBoard();
 
                         }
                     }
@@ -70,12 +73,12 @@ public class Login extends JFrame {
                         String dbUser_name=r2.getString("user_name");
                         String dbPassword =r2.getString("password");
                         if(dbUser_name.equals(username)&&dbPassword.equals(password)){
-                            ud.setUserDetails(username,password,"Technical Officer");
+                            UserDetails.setUserDetails(username,password,"Technical Officer");
                             sign=1;
                             dispose();
 
                             //direct Technical officer home page-----------------------------------------
-
+                            TechnicalOfficerDashBoard toDashBoard= new TechnicalOfficerDashBoard;
                         }
                     }
 
@@ -84,12 +87,12 @@ public class Login extends JFrame {
                         String dbUser_name=r3.getString("user_name");
                         String dbPassword =r3.getString("password");
                         if(dbUser_name.equals(username)&&dbPassword.equals(password)){
-                            ud.setUserDetails(username,password,"Lecturer");
+                            UserDetails.setUserDetails(username,password,"Lecturer");
                             sign=1;
                             dispose();
 
                             //direct Lecturer home page-----------------------------------------
-
+                            LecturerDashboard lec1=new LecturerDashboard();
                         }
                     }
 
@@ -98,11 +101,13 @@ public class Login extends JFrame {
                         String dbUser_name=r4.getString("user_name");
                         String dbPassword =r4.getString("password");
                         if(dbUser_name.equals(username)&&dbPassword.equals(password)) {
-                            ud.setUserDetails(username,password,"Student");
+                            UserDetails.setUserDetails(username,password,"Student");
                             sign=1;
                             dispose();
 
                             //direct Student home page-----------------------------------------
+                            StudentDashBoard sDashboard = new StudentDashBoard();
+                            sDashboard.loadUserDetails();
                         }
                     }
 

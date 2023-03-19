@@ -21,8 +21,11 @@ CREATE TABLE IF NOT EXISTS `department` (
 DROP TABLE IF EXISTS `course_material`;
 CREATE TABLE IF NOT EXISTS `course_material` (
   `m_id` varchar(100) NOT NULL,
-  `m_path` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`m_id`)
+  `sub_code` varchar(50) NOT NULL,
+  `m_path` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`m_id`),
+  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
+  
 );
 
 -- -------------------------------------------------------- --
@@ -33,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `notice` (
   `notice_id` varchar(100) NOT NULL,
   `date` date DEFAULT NULL,
   `title` varchar(100) DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
+  `description` text(500) DEFAULT NULL,
   PRIMARY KEY (`notice_id`)
 );
 
@@ -115,7 +118,9 @@ CREATE TABLE IF NOT EXISTS `student` (
   `level` int(11) DEFAULT NULL,
   `SGPA` double DEFAULT NULL,
   `CGPA` double DEFAULT NULL,
+  `profile_pic_name` VARCHAR(255) DEFAULT NULL,
   `profile_pic_path` VARCHAR(255) DEFAULT NULL,
+  `profile_pic_image` LONGBLOB Default NULL,
   `dep_id` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`student_id`),
   FOREIGN KEY (`dep_id`) REFERENCES department(`dep_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -177,27 +182,19 @@ CREATE TABLE IF NOT EXISTS `lecturer_upload_material` (
 DROP TABLE IF EXISTS `medical`;
 CREATE TABLE IF NOT EXISTS `medical` (
   `medical_id` varchar(50) NOT NULL,
+  `student_id` varchar(50) NOT NULL,
+  `sub_code` varchar(50) NOT NULL,
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `approve_status` varchar(100) DEFAULT NULL,
-  `medical_path` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`medical_id`)
-) ;
-
--- -------------------------------------------------------- --
--- Table structure for table `medical_submission`
---
-
-DROP TABLE IF EXISTS `medical_submission`;
-CREATE TABLE IF NOT EXISTS `medical_submission` (
-  `medical_id` varchar(50) NOT NULL,
-  `student_id` varchar(50) NOT NULL,
-  `sub_code` varchar(50) NOT NULL,
+  `medical_pic_name` VARCHAR(255) DEFAULT NULL,
+  `medical_pic_path` varchar(255) DEFAULT NULL,
+  `medical_pic_image` LONGBLOB Default NULL,
   PRIMARY KEY (`medical_id`,`student_id`,`sub_code`),
-  FOREIGN KEY (`medical_id`) REFERENCES medical(`medical_id`)ON DELETE NO ACTION ON UPDATE NO ACTION,
   FOREIGN KEY (`student_id`) REFERENCES student(`student_id`)ON DELETE NO ACTION ON UPDATE NO ACTION,
   FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
-);
+) ;
+
 
 -- -------------------------------------------------------- --
 -- Table structure for table `time_table` --
@@ -205,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `medical_submission` (
 DROP TABLE IF EXISTS `time_table`;
 CREATE TABLE IF NOT EXISTS `time_table` (
   `level` int(11) NOT NULL,
-  `t_table_path` varchar(255) NOT NULL,
+  `t_table_path` VARCHAR(255) DEFAULT NULL,
   `dep_id` varchar(100) NOT NULL,
   PRIMARY KEY (`level`,`dep_id`),
   FOREIGN KEY (`dep_id`) REFERENCES department(`dep_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -217,11 +214,13 @@ CREATE TABLE IF NOT EXISTS `time_table` (
 DROP TABLE IF EXISTS `attendance`;
 CREATE TABLE IF NOT EXISTS `attendance` (
   `sub_code` varchar(50) NOT NULL,
+  `type` varchar(100) NOT NULL,
   `student_id` varchar(50) NOT NULL,
   `date` date NOT NULL,
   `attempt_status` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`sub_code`,`student_id`,`date`),
+  PRIMARY KEY (`sub_code`,`type`,`student_id`,`date`),
   FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY (`type`) REFERENCES subject(`type`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   FOREIGN KEY (`student_id`) REFERENCES student(`student_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
@@ -238,8 +237,7 @@ CREATE TABLE IF NOT EXISTS `marks` (
 	`quiz_4` double DEFAULT NULL,
 	`assesment_1` double DEFAULT NULL,
 	`assesment_2` double DEFAULT NULL,
-	`mid_theory` double DEFAULT NULL,
-	`mid_practical` double DEFAULT NULL,
+	`mid_marks` double DEFAULT NULL,
 	`CA_marks` double DEFAULT NULL,
 	`end_theory` double DEFAULT NULL,
 	`end_practical` double DEFAULT NULL,
@@ -261,6 +259,7 @@ VALUES
 INSERT INTO `department` (`dep_id`, `dep_name`) VALUES 
 ('DEPICT', 'Department of ICT'),
 ('DEPET', 'Department of Engineering Technology'),
+('DEPMUL', 'Department of Multi Deciplinary'),
 ('DEPBST', 'Department of Bio System Technology');
 
 INSERT INTO `lecturer` 
