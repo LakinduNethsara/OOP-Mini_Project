@@ -57,19 +57,19 @@ public class Login extends JFrame {
                     {
                         String dbUser_name=r1.getString("user_name");
                         String dbPassword =r1.getString("password");
-                       if(dbUser_name.equals(username)&&dbPassword.equals(password)){
-                           UserDetails.setUserDetails(username,password,"Admin");
-                           sign=1;
-                           dispose();
+                        if(dbUser_name.equals(username)&&dbPassword.equals(password)){
+                            UserDetails.setUserDetails(username,password,"Admin");
+                            sign=1;
+                            dispose();
 
                             //direct admin home page-----------------------------------------
-                           AdminDashBoard ad=new AdminDashBoard();
+                            AdminDashBoard ad=new AdminDashBoard();
 
                         }
                     }
 
                     r2 = ps.executeQuery(query2);
-                   while(r2.next()){
+                    while(r2.next()){
                         String dbUser_name=r2.getString("user_name");
                         String dbPassword =r2.getString("password");
                         if(dbUser_name.equals(username)&&dbPassword.equals(password)){
