@@ -1,14 +1,5 @@
 package com.user;
 
-import com.DBconnection.dbConnection;
-import com.login.Login;
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 public class UserDetails {
     private static String myUserame=null;
     private static String myPassword=null;
@@ -29,6 +20,5 @@ public class UserDetails {
     public static String getType() {
         return myType;
     }
-
 
 }
