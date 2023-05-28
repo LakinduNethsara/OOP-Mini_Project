@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.technicalOfficer.TechnicalOfficerAttendance">
+  <grid id="27dc6" binding="TOPattendancepanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="839" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-7236458"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="8a928" binding="TOApanel1" layout-manager="GridLayoutManager" row-count="13" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-7236458"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="148c3" class="javax.swing.JLabel" binding="TOattendancelabel3">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial Rounded MT Bold" size="20" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Subject Code"/>
+            </properties>
+          </component>
+          <component id="9cfbe" class="javax.swing.JLabel" binding="TOattendancelabel4">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial Rounded MT Bold" size="20" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Date"/>
+            </properties>
+          </component>
+          <component id="9bfb2" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+            </properties>
+          </component>
+          <component id="fc4ea" class="javax.swing.JLabel" binding="TOattendencelabel5">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial Rounded MT Bold" size="20" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Student ID"/>
+            </properties>
+          </component>
+          <component id="b58db" class="javax.swing.JLabel" binding="TOattendancelabel6">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial Rounded MT Bold" size="20" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Attempt Status"/>
+            </properties>
+          </component>
+          <component id="51996" class="javax.swing.JButton" binding="attendancebtn1">
+            <constraints>
+              <grid row="6" column="0" row-span="6" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13683978"/>
+              <foreground color="-918273"/>
+              <text value="Save"/>
+            </properties>
+          </component>
+          <component id="6d257" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+            <constraints>
+              <grid row="5" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Yes"/>
+                <item value="No"/>
+              </model>
+            </properties>
+          </component>
+          <hspacer id="c63c5">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="331e0" class="javax.swing.JButton" binding="attendancebtn2">
+            <constraints>
+              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="&lt;Back"/>
+            </properties>
+          </component>
+          <component id="9518a" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model/>
+            </properties>
+          </component>
+          <component id="60d0b" class="javax.swing.JButton" binding="TOattendancebtn3">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="OK"/>
+            </properties>
+          </component>
+          <component id="e9d32" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model/>
+            </properties>
+          </component>
+          <component id="befc2" class="javax.swing.JLabel" binding="TOattendancelabel7">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial Rounded MT Bold" size="20" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="Type"/>
+            </properties>
+          </component>
+          <component id="eea64" class="javax.swing.JComboBox" binding="comboBox4" default-binding="true">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Theory"/>
+                <item value="Practical"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="d2dc9" binding="TOApanel2" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10328729"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a9c8b" class="javax.swing.JLabel" binding="TOattendance1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="icons/TechnicalOfficer Icon/TOfficer_attendance.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="46490" class="javax.swing.JLabel" binding="TOattendance2">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="48" style="0"/>
+              <foreground color="-15263813"/>
+              <text value="Attendance Deatails"/>
+            </properties>
+          </component>
+          <vspacer id="879e7">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="935c9">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
