@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="387ee7ab-151d-40f6-9fd6-4003459256dd" name="Changes" comment="" />
+    <list default="true" id="387ee7ab-151d-40f6-9fd6-4003459256dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/AddLectureMaterial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/AddLectureMaterial.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +184,8 @@
       <workItem from="1685247101811" duration="342000" />
       <workItem from="1685247532373" duration="872000" />
       <workItem from="1685257837493" duration="144000" />
-      <workItem from="1685258045998" duration="505000" />
+      <workItem from="1685258045998" duration="546000" />
+      <workItem from="1685258606338" duration="113000" />
     </task>
     <servers />
   </component>
