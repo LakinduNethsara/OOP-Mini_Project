@@ -1,0 +1,1 @@
+This is the folder for store profile pictures
