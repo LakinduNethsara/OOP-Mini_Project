@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="387ee7ab-151d-40f6-9fd6-4003459256dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Database/tecmis_database_group 11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Database/tecmis_database_group 11.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tecmis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/DBconnection/dbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/DBconnection/dbConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/AddLectureMaterial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/AddLectureMaterial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseList$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseList$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentCourseMaterial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentDashBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentUpdateProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewNotice$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewNotice$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewNotice$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewNotice$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewNotice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewNotice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewTimeTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/StudentViewTimeTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewAttendance$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewAttendance$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewAttendance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewAttendance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewMedical$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewMedical$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/student/viewMedical.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/user/UserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/user/UserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Admin/AssignSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Admin/AssignSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DBconnection/dbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DBconnection/dbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lecturer/AddLectureMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lecturer/AddLectureMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/login/Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/login/Login.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentCourseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentCourseList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentCourseMaterial.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentCourseMaterial.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentCourseMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentCourseMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentDashBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentDashBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentUpdateProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentUpdateProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentViewNotice.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentViewNotice.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentViewNotice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentViewNotice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/StudentViewTimeTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/StudentViewTimeTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/viewAttendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/viewAttendance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/viewMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/viewMedical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/user/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/user/UserDetails.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/student/StudentDetails.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2N2AbjMeTZ9KPhV9ErzkNEXil8Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;88&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;179&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lakindu Nethsar/Desktop/OOP Project temp folder/Version 14/OOP-Mini_Project/Tecmis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.DBconnection" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Login (3)">
+    <configuration name="Login (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.login.Login" />
+      <module name="Tecmis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.login.Login" />
+      <module name="Tecmis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.login.Login" />
+      <module name="Tecmis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.login.Login" />
+      <module name="Tecmis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDashBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.student.StudentDashBoard" />
+      <module name="Tecmis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Login (3)" />
+        <item itemvalue="Application.Login" />
+        <item itemvalue="Application.StudentDashBoard" />
+        <item itemvalue="Application.Login (1)" />
+        <item itemvalue="Application.Login (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="387ee7ab-151d-40f6-9fd6-4003459256dd" name="Changes" comment="" />
+      <created>1678851882488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678851882488</updated>
+      <workItem from="1678851882832" duration="294000" />
+      <workItem from="1678852327994" duration="54000" />
+      <workItem from="1678852460135" duration="7352000" />
+      <workItem from="1678865755113" duration="316000" />
+      <workItem from="1678866137748" duration="5527000" />
+      <workItem from="1678872950627" duration="1446000" />
+      <workItem from="1678875833853" duration="2730000" />
+      <workItem from="1678880440330" duration="18316000" />
+      <workItem from="1678899787739" duration="491000" />
+      <workItem from="1678900310620" duration="284000" />
+      <workItem from="1678913331185" duration="327000" />
+      <workItem from="1678917662227" duration="1924000" />
+      <workItem from="1678941424722" duration="95000" />
+      <workItem from="1678941561655" duration="20000" />
+      <workItem from="1678946666906" duration="6000" />
+      <workItem from="1678946699210" duration="31082000" />
+      <workItem from="1678983420218" duration="15774000" />
+      <workItem from="1679001966832" duration="3749000" />
+      <workItem from="1679029411232" duration="16739000" />
+      <workItem from="1679071367061" duration="22589000" />
+      <workItem from="1679117587153" duration="48451000" />
+      <workItem from="1679186814874" duration="167000" />
+      <workItem from="1679188029835" duration="289000" />
+      <workItem from="1679197853891" duration="408000" />
+      <workItem from="1679198327619" duration="428000" />
+      <workItem from="1679201041669" duration="669000" />
+      <workItem from="1684466367665" duration="579000" />
+      <workItem from="1684468172648" duration="21799000" />
+      <workItem from="1684553372685" duration="9851000" />
+      <workItem from="1684845035890" duration="54000" />
+      <workItem from="1685083063134" duration="362000" />
+      <workItem from="1685084373838" duration="2406000" />
+      <workItem from="1685114793204" duration="23695000" />
+      <workItem from="1685190176248" duration="1397000" />
+      <workItem from="1685197132258" duration="68000" />
+      <workItem from="1685247101811" duration="342000" />
+      <workItem from="1685247532373" duration="872000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
