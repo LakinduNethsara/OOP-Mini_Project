@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00056182-4f2f-4bd0-833d-928e5b355d29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tecmis/src/com/Admin/AdminDashboard.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tecmis/src/com/Admin/AdminDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tecmis/src/com/Admin/UpdateStudent.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/tecmis_database_group 11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/tecmis_database_group 11.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecmis/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/login/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/login/Login$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/login/Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/login/Login$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/login/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/user/UserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/out/production/Tecmis/com/user/UserDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecmis/src/com/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/src/com/login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tecmis/src/com/user/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/src/com/user/UserDetails.java" afterDir="false" />
-    </list>
+    <list default="true" id="00056182-4f2f-4bd0-833d-928e5b355d29" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +22,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/manuj/OneDrive/Desktop/OOP-Mini_Project_new2version"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/wamp64/www/OOP-Mini_Project",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -45,6 +35,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679123925521</updated>
+      <workItem from="1685259073895" duration="21000" />
     </task>
     <servers />
   </component>
