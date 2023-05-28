@@ -78,10 +78,6 @@ public class FinalMarksOfWholeBatch extends JFrame {
 
                     table1.setModel(DbUtils.resultSetToTableModel(rs1));
 
-                    while(rs1.next())
-                    {
-                        table1.setModel(DbUtils.resultSetToTableModel(rs1));
-                    }
 
                 } catch (SQLException ex) {
                     throw new RuntimeException(ex);

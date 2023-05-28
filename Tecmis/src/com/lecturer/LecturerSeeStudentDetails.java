@@ -46,10 +46,9 @@ public class LecturerSeeStudentDetails extends JFrame {
             Connection con=dbConnection.dbConnect();
             PreparedStatement pst2=con.prepareStatement("select student_id,first_name,last_name,email,address,phone_number,level,SGPA,CGPA from student ");
             ResultSet rs2= pst2.executeQuery();
-            while(rs2.next())
-            {
-                table1.setModel(DbUtils.resultSetToTableModel(rs2));
-            }
+
+            table1.setModel(DbUtils.resultSetToTableModel(rs2));
+
 
         } catch (SQLException e) {
             e.printStackTrace();
