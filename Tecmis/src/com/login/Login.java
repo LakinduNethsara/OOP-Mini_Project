@@ -1,11 +1,12 @@
 package com.login;
+
+import com.Admin.AdminDashBoard;
+import com.Admin.RegisterAdmin;
 import com.DBconnection.dbConnection;
+import com.lecturer.LecturerDashboard;
 import com.student.StudentDashBoard;
-import com.student.StudentDetails;
 import com.technicalOfficer.TechnicaOfficerDashBoard;
 import com.user.UserDetails;
-import com.lecturer.LecturerDashboard;
-import com.Admin.AdminDashBoard;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -113,7 +114,6 @@ public class Login extends JFrame {
                             //direct Student home page-----------------------------------------
                             StudentDashBoard sDashboard = new StudentDashBoard();
                             sDashboard.loadUserDetails();
-                            new StudentDetails();       //create object of studentDetails to use inheritance
                         }
                     }
 
@@ -146,6 +146,8 @@ public class Login extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 //call register from with creating an object or register form.
+                dispose();
+                new RegisterAdmin();
             }
         });
     }
