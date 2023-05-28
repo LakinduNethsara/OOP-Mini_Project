@@ -59,10 +59,6 @@ public class FinalMarkOfStudent extends JFrame {
 
             studentMarksTable.setModel(DbUtils.resultSetToTableModel(rs));
 
-            while(rs.next())
-            {
-                studentMarksTable.setModel(DbUtils.resultSetToTableModel(rs));
-            }
 
         } catch (SQLException ex) {
             throw new RuntimeException(ex);

@@ -93,11 +93,6 @@ public class LecturerSeeStudentMedicals extends JFrame {
 
                     table1.setModel(DbUtils.resultSetToTableModel(rs2));
 
-                    while(rs2.next())
-                    {
-                        table1.setModel(DbUtils.resultSetToTableModel(rs2));
-                    }
-
                 } catch (SQLException e) {
                     //throw new RuntimeException(e);
                     e.printStackTrace();
