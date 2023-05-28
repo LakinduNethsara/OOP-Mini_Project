@@ -58,7 +58,6 @@ public class StudentEligibility extends JFrame {
 
                 ResultSet R2 = LecturerDB.subjectsForSid(stid);
 
-
                 try {
                     while(R2.next())
                     {

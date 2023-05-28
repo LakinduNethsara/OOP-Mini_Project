@@ -21,7 +21,6 @@ public class LecturerDB {
 
                 Statement st = con.createStatement();
                 rs = st.executeQuery(query);
-                rs.next();
 
             } catch (SQLException e) {
                 throw new RuntimeException(e);

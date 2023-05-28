@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="387ee7ab-151d-40f6-9fd6-4003459256dd" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/../Database/tecmis_database_group 11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Database/tecmis_database_group 11.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tecmis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/AssignSubject$1.class" afterDir="false" />
@@ -61,6 +62,24 @@
       <change beforePath="$PROJECT_DIR$/src/com/student/viewAttendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/viewAttendance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/student/viewMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/viewMedical.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/user/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/user/UserDetails.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/Admin/Admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/lecturer/StudentEligibility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lecturer/LecturerDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lecturer/LecturerDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lecturer/StudentEligibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lecturer/StudentEligibility.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +116,11 @@
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;88&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;179&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Lakindu Nethsar/Desktop/OOP Project temp folder/Version 14/OOP-Mini_Project/Tecmis&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hasindu/Videos/OOP-Mini_Project/Tecmis&quot;,
+>>>>>>> Stashed changes
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -235,6 +258,14 @@
       <workItem from="1685197132258" duration="68000" />
       <workItem from="1685247101811" duration="342000" />
       <workItem from="1685247532373" duration="872000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1685257837493" duration="144000" />
+      <workItem from="1685258045998" duration="546000" />
+      <workItem from="1685258606338" duration="113000" />
+      <workItem from="1685259701242" duration="1191000" />
+      <workItem from="1685266085396" duration="428000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
