@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="387ee7ab-151d-40f6-9fd6-4003459256dd" name="Changes" comment="">
 <<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/../Database/tecmis_database_group 11.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Database/tecmis_database_group 11.sql" afterDir="false" />
@@ -79,6 +80,10 @@
       <change beforePath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tecmis/com/login/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lecturer/LecturerDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lecturer/LecturerDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lecturer/StudentEligibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lecturer/StudentEligibility.java" afterDir="false" />
+>>>>>>> Stashed changes
+=======
+    <list default="true" id="8790fc87-458b-418d-9cbc-d37749d58363" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
