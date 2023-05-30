@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00056182-4f2f-4bd0-833d-928e5b355d29" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Tecmis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tecmis/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="00056182-4f2f-4bd0-833d-928e5b355d29" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +37,7 @@
       <updated>1679123925521</updated>
       <workItem from="1685259073895" duration="21000" />
       <workItem from="1685284577273" duration="4000" />
+      <workItem from="1685460316141" duration="11000" />
     </task>
     <servers />
   </component>
