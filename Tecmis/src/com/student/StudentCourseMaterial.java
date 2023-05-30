@@ -81,6 +81,7 @@ public class StudentCourseMaterial extends JFrame{
                     idComboBox.removeAllItems();
                     while(rs.next()){
                         idComboBox.addItem(rs.getString("m_id"));
+                        System.out.println(subCode);
                     }
                 } catch (SQLException ex) {
                     throw new RuntimeException(ex);

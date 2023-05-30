@@ -97,7 +97,13 @@ public class StudentViewNotice extends JFrame {
             JOptionPane.showMessageDialog(null,"No Notices Available");
             System.out.println("No Notices Available..."+e.getMessage());
         }
-
+        finally{
+            try {
+                con.close();
+            } catch (SQLException e) {
+                System.out.println("Error in closing db connection..."+e.getMessage());
+            }
+        }
     }
 
 
