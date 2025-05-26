@@ -15,30 +15,6 @@ CREATE TABLE IF NOT EXISTS `department` (
   PRIMARY KEY (`dep_id`)
 );
 
--- -------------------------------------------------------- --
--- Table structure for table `course_material` --
-
-DROP TABLE IF EXISTS `course_material`;
-CREATE TABLE IF NOT EXISTS `course_material` (
-  `m_id` varchar(100)  NOT NULL,
-  `sub_code` varchar(50) NOT NULL,
-  `m_path` VARCHAR(255) DEFAULT NULL,
-  PRIMARY KEY (`m_id`),
-  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
-  
-);
-
--- -------------------------------------------------------- --
--- Table structure for table `notice` --
-
-DROP TABLE IF EXISTS `notice`;
-CREATE TABLE IF NOT EXISTS `notice` (
-  `notice_id` varchar(100) NOT NULL,
-  `date` date DEFAULT NULL,
-  `title` varchar(100) DEFAULT NULL,
-  `description` text(500) DEFAULT NULL,
-  PRIMARY KEY (`notice_id`)
-);
 
 -- -------------------------------------------------------- --
 -- Table structure for table `admin` --
@@ -58,6 +34,51 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `gender` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`admin_id`)
 ) ;
+
+
+-- -------------------------------------------------------- --
+-- Table structure for table `notice` --
+
+DROP TABLE IF EXISTS `notice`;
+CREATE TABLE IF NOT EXISTS `notice` (
+  `notice_id` varchar(100) NOT NULL,
+  `date` date DEFAULT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `description` text(500) DEFAULT NULL,
+  PRIMARY KEY (`notice_id`)
+);
+
+
+-- -------------------------------------------------------- --
+-- Table structure for table `subject` --
+
+DROP TABLE IF EXISTS `subject`;
+CREATE TABLE IF NOT EXISTS `subject` (
+  `sub_code` varchar(50) NOT NULL,
+  `sub_name` varchar(100) DEFAULT NULL,
+  `type` varchar(100) NOT NULL,
+  `credit` int(11) DEFAULT NULL,
+  `dep_id` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`sub_code`,`type`),
+  FOREIGN KEY (`dep_id`) REFERENCES department(`dep_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+);
+
+-- -------------------------------------------------------- --
+-- Table structure for table `course_material` --
+
+DROP TABLE IF EXISTS `course_material`;
+CREATE TABLE IF NOT EXISTS `course_material` (
+  `m_id` varchar(100)  NOT NULL,
+  `sub_code` varchar(50) NOT NULL,
+  `m_path` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`m_id`),
+  FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION
+  
+);
+
+
+
+
 
 -- -------------------------------------------------------- --
 -- Table structure for table `tecnical_officer` --
@@ -126,19 +147,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   FOREIGN KEY (`dep_id`) REFERENCES department(`dep_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ;
 
--- -------------------------------------------------------- --
--- Table structure for table `subject` --
 
-DROP TABLE IF EXISTS `subject`;
-CREATE TABLE IF NOT EXISTS `subject` (
-  `sub_code` varchar(50) NOT NULL,
-  `sub_name` varchar(100) DEFAULT NULL,
-  `type` varchar(100) NOT NULL,
-  `credit` int(11) DEFAULT NULL,
-  `dep_id` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`sub_code`,`type`),
-  FOREIGN KEY (`dep_id`) REFERENCES department(`dep_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-);
 
 -- -------------------------------------------------------- --
 -- Table structure for table `student_subjects` --
@@ -220,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `attendance` (
   `attempt_status` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`sub_code`,`type`,`student_id`,`date`),
   FOREIGN KEY (`sub_code`) REFERENCES subject(`sub_code`)ON DELETE NO ACTION ON UPDATE NO ACTION,
-  FOREIGN KEY (`type`) REFERENCES subject(`type`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  /*FOREIGN KEY (`type`) REFERENCES subject(`type`) ON DELETE NO ACTION ON UPDATE NO ACTION,*/
   FOREIGN KEY (`student_id`) REFERENCES student(`student_id`)ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 

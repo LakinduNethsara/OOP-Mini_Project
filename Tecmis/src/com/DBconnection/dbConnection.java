@@ -8,7 +8,7 @@ public class dbConnection {
     //private static String driver="com.mysql.cj.jdbc.Driver";
     private static String url="jdbc:mysql://localhost:3306/tecmis";
     private static String uname="root";
-    private static String password="";
+    private static String password="1234";
 
     private static void registerDb(){       //method to register the driver
         try {
